@@ -2,9 +2,9 @@
 
 You should have a class for a Library,
 
-In that library you should be able to add books, delete them.
+In that library you should be able to add books, delete them and list them.
 
-In addition to that, add books to cart (or basket), and the user can use `checkout()` method, to buy all books if any, then empies the cart, otherwise it will show a message that there's no books in cart.
+In addition to that, read from and add books to cart (or basket), and the user can do `checkout()` to buy all books if any, then empties the cart, otherwise it will show a message that there's no books in cart.
 
 Also it should have a method for searching books by title or auther name, it should return all books that contain that part of string.
 
