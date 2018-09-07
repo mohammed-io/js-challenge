@@ -157,10 +157,12 @@ class Library
     }
 
     addBookToLibrary(book) {
+        // here using map() and filter() is also accepted
         return this.books.push(book);
     }
 
     removeBook(title) {
+        // here using map() and filter() is also accepted
         const indexToRemove = this.books.findIndex(x => x.title === title);
         return this.books.splice(indexToRemove, 1);
     }
@@ -171,6 +173,7 @@ class Library
     }
 
     addBookToCart(title) {
+        // here using map() and filter() is also accepted
         const book = this.books.find(x => x.title === title);
 
         return this.cart.findIndex(x => x.title === title) === -1
@@ -179,6 +182,7 @@ class Library
     }
 
     removeFromCart(title) {
+        // here using map() and filter() is also accepted
         const indexToRemove = this.cart.findIndex(x => x.title === title);
         return this.cart.splice(indexToRemove, 1);
     }
