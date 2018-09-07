@@ -166,6 +166,7 @@ class Library
     }
 
     getAllBooks() {
+        // Or with console log of each one the entries
         return this.books;
     }
 
