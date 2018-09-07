@@ -188,6 +188,12 @@ class Library
             .filter(x => x.title.includes(term) || x.author.includes(term));
     }
 
+    getSumOfPages() {
+      return this.cart.reduce((acc, x) => {
+        return acc + x.pages;
+      }, 0);
+    }
+
     checkout() {
         if (this.cart.length === 0) {
             console.log('You have nothing in your cart!');
